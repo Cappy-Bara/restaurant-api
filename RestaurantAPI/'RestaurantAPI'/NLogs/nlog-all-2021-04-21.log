@@ -1,0 +1,9 @@
+2021-04-21 17:19:30.4888||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-21 17:19:30.5466||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-21 17:19:30.5466||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-21 17:19:30.5466||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-21 17:19:30.5466||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-21 17:19:59.1365||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-21 17:19:59.1365||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-21 17:20:05.7251||ERROR|_RestaurantAPI_.RestaurantService|Restaurant with id: 1004 DELETE action invoked 
+2021-04-21 17:20:07.2727||ERROR|_RestaurantAPI_.RestaurantService|Restaurant with id: 1004 DELETE action invoked 

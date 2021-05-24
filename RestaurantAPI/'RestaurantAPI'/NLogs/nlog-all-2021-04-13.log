@@ -1,0 +1,118 @@
+2021-04-13 12:12:33.8308||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 12:12:33.8571||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 12:12:33.8589||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 12:12:33.8589||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 12:12:33.8589||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 12:40:46.3934||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 12:40:46.4286||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 12:40:46.4286||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 12:40:46.4286||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 12:40:46.4286||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 12:42:26.3589||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 12:42:26.3951||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 12:42:26.3951||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 12:42:26.3951||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 12:42:26.3951||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 12:47:18.1666||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 12:47:18.1961||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 12:47:18.1961||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 12:47:18.1961||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 12:47:18.1961||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 12:58:52.8612||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 12:58:52.8985||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 12:58:52.8985||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 12:58:52.8985||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 12:58:52.8985||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 13:24:15.1518||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 13:24:15.1753||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 13:24:15.1753||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 13:24:15.1753||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 13:24:15.1753||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 23:13:54.1731||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 23:13:54.2111||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 23:13:54.2111||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 23:13:54.2111||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 23:13:54.2111||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 23:15:18.4205||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Invalid column name 'Email'. Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Email'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source, Expression`1 predicate)
+   at _RestaurantAPI_.Models.Validators.RegisterUserDtoValidator.<>c__DisplayClass0_0.<.ctor>b__5(String value, ValidationContext`1 context) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Models\Validators\RegisterUserDtoValidator.cs:line 26
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass68_0`2.<Custom>b__0(T parent, TProperty value, ValidationContext`1 context) in C:\Projects\FluentValidation\src\FluentValidation\DefaultValidatorExtensions.cs:line 1135
+   at FluentValidation.DefaultValidatorExtensions.<>c__DisplayClass30_0`2.<Must>b__0(T instance, TProperty property, ValidationContext`1 propertyValidatorContext) in C:\Projects\FluentValidation\src\FluentValidation\DefaultValidatorExtensions.cs:line 472
+   at FluentValidation.Validators.PredicateValidator`2.IsValid(ValidationContext`1 context, TProperty value) in C:\Projects\FluentValidation\src\FluentValidation\Validators\PredicateValidator.cs:line 36
+   at FluentValidation.Internal.RuleComponent`2.Validate(ValidationContext`1 context, TProperty value) in C:\Projects\FluentValidation\src\FluentValidation\Internal\RuleComponent.cs:line 98
+   at FluentValidation.Internal.PropertyRule`2.InvokePropertyValidator(ValidationContext`1 context, Lazy`1 accessor, String propertyName, RuleComponent`2 component) in C:\Projects\FluentValidation\src\FluentValidation\Internal\PropertyRule.cs:line 240
+   at FluentValidation.Internal.PropertyRule`2.Validate(ValidationContext`1 context) in C:\Projects\FluentValidation\src\FluentValidation\Internal\PropertyRule.cs:line 120
+   at FluentValidation.AbstractValidator`1.Validate(ValidationContext`1 context) in C:\Projects\FluentValidation\src\FluentValidation\AbstractValidator.cs:line 92
+   at FluentValidation.AbstractValidator`1.FluentValidation.IValidator.Validate(IValidationContext context) in C:\Projects\FluentValidation\src\FluentValidation\AbstractValidator.cs:line 48
+   at FluentValidation.AspNetCore.FluentValidationModelValidator.Validate(ModelValidationContext mvContext) in C:\Projects\FluentValidation\src\FluentValidation.AspNetCore\FluentValidationModelValidatorProvider.cs:line 113
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.ValidateNode()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>n__1(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>c__DisplayClass2_0.<Validate>g__BaseValidate|0() in C:\Projects\FluentValidation\src\FluentValidation.AspNetCore\FluentValidationVisitor.cs:line 44
+   at FluentValidation.AspNetCore.FluentValidationVisitor.ValidateInternal(ModelMetadata metadata, String key, Object model, Func`1 continuation) in C:\Projects\FluentValidation\src\FluentValidation.AspNetCore\FluentValidationVisitor.cs:line 62
+   at FluentValidation.AspNetCore.FluentValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container) in C:\Projects\FluentValidation\src\FluentValidation.AspNetCore\FluentValidationVisitor.cs:line 46
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+ClientConnectionId:a8ac3f0b-073f-4ee6-b43e-eb7dffbfabdd
+Error Number:207,State:1,Class:16
+2021-04-13 23:17:54.5315||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 23:17:54.5595||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 23:17:54.5595||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 23:17:54.5595||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 23:17:54.5595||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 23:22:22.4487||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 23:22:22.4893||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 23:22:22.4893||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 23:22:22.4893||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 23:22:22.5029||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 23:26:18.3656||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 199114ms 
+2021-04-13 23:31:35.4812||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 87145ms 
+2021-04-13 23:32:56.2153||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 54717ms 
+2021-04-13 23:34:52.7418||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 23:34:52.7730||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 23:34:52.7730||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 23:34:52.7730||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 23:34:52.7730||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 23:35:01.2348||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-13 23:35:01.2847||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-13 23:35:01.2847||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-13 23:35:01.2847||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-13 23:35:01.2995||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-13 23:35:57.9588||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 31510ms 

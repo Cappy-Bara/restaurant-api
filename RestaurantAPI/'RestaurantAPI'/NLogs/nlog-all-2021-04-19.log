@@ -1,0 +1,59 @@
+2021-04-19 19:08:41.8958||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-19 19:08:41.9285||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-19 19:08:41.9285||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-19 19:08:41.9285||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-19 19:08:41.9285||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-19 19:23:43.2502||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-19 19:23:43.3221||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-19 19:23:43.3221||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-19 19:23:43.3221||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-19 19:23:43.3279||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-19 19:24:35.9719||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-19 19:24:36.0002||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-19 19:24:36.0002||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-19 19:24:36.0002||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-19 19:24:36.0002||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-19 19:26:28.5289||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Could not find a part of the path 'D:\csharp\RestaurantAPI\'RestaurantAPI'\PrivateFiles\'. System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\csharp\RestaurantAPI\'RestaurantAPI'\PrivateFiles\'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.File.ReadAllBytes(String path)
+   at _RestaurantAPI_.Controllers.FileController.GetFile(String fileName) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Controllers\FileController.cs:line 30
+   at lambda_method94(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-19 19:29:30.8560||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-19 19:29:30.8797||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-19 19:29:30.8797||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-19 19:29:30.8797||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-19 19:29:30.8797||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-19 19:29:47.6243||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-19 19:29:47.6713||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-19 19:29:47.6735||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-19 19:29:47.6735||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-19 19:29:47.6735||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-19 19:30:55.7612||INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2021-04-19 19:38:14.1075||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-19 19:38:14.1325||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-19 19:38:14.1325||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-19 19:38:14.1325||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-19 19:38:14.1325||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 

@@ -1,0 +1,6 @@
+2021-04-07 13:59:48.2347||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 11194ms 
+2021-04-13 23:26:18.3656||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 199114ms 
+2021-04-13 23:31:35.4812||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 87145ms 
+2021-04-13 23:32:56.2153||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 54717ms 
+2021-04-13 23:35:57.9588||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 31510ms 
+2021-04-14 14:54:51.4451||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 19464ms 

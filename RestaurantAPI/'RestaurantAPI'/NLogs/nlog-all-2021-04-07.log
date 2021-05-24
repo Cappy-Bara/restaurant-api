@@ -1,0 +1,132 @@
+2021-04-07 11:33:48.6281||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 11:33:48.7001||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 11:33:48.7001||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 11:33:48.7001||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 11:33:48.7001||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 11:38:57.7130||WARN|_RestaurantAPI_.RestaurantService|Restaurant with id: 100 DELETE action invoked 
+2021-04-07 11:42:59.5419||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 11:42:59.5711||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 11:42:59.5711||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 11:42:59.5711||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 11:42:59.5711||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 11:43:02.3673||ERROR|_RestaurantAPI_.RestaurantService|Restaurant with id: 100 DELETE action invoked 
+2021-04-07 11:43:19.1039||ERROR|_RestaurantAPI_.RestaurantService|Restaurant with id: 100 DELETE action invoked 
+2021-04-07 11:43:41.8130||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 11:43:41.8476||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 11:43:41.8493||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 11:43:41.8493||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 11:43:41.8493||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 11:43:48.6215||ERROR|_RestaurantAPI_.RestaurantService|Restaurant with id: 100 DELETE action invoked 
+2021-04-07 12:05:08.2068||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 12:05:08.2340||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 12:05:08.2340||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 12:05:08.2340||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 12:05:08.2340||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 12:05:14.1220||ERROR|_RestaurantAPI_.RestaurantService|Restaurant with id: 100 DELETE action invoked 
+2021-04-07 12:05:24.6351||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Cannot open database "RechujstaurantDb" requested by the login. The login failed.
+Login failed for user 'DESKTOP-R8L9JN2\kacpe'. Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "RechujstaurantDb" requested by the login. The login failed.
+Login failed for user 'DESKTOP-R8L9JN2\kacpe'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at _RestaurantAPI_.RestaurantService.Delete(Int32 id) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Services\RestaurantService.cs:line 64
+   at _RestaurantAPI_.Controllers.RestaurantControler.Delete(Int32 Id) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Controllers\RestaurantControler.cs:line 44
+   at lambda_method7(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 22
+ClientConnectionId:d922826d-cdfb-4817-a3c9-b2be474f4a42
+Error Number:4060,State:1,Class:11
+2021-04-07 12:37:52.5631||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 12:37:52.5937||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 12:37:52.6008||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 12:37:52.6008||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 12:37:52.6008||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 12:43:41.0838||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 12:43:41.1150||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 12:43:41.1150||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 12:43:41.1150||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 12:43:41.1150||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 12:57:21.3257||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 12:57:21.3567||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 12:57:21.3567||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 12:57:21.3567||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 12:57:21.3567||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 12:57:42.5859||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Ambiguous HTTP method for action - RestaurantAPI.Controllers.WeatherForecastController.Hello (RestaurantAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0 Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - RestaurantAPI.Controllers.WeatherForecastController.Hello (RestaurantAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-07 12:58:02.2033||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Ambiguous HTTP method for action - RestaurantAPI.Controllers.WeatherForecastController.Hello (RestaurantAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0 Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - RestaurantAPI.Controllers.WeatherForecastController.Hello (RestaurantAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-07 12:58:31.9545||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Ambiguous HTTP method for action - RestaurantAPI.Controllers.WeatherForecastController.Hello (RestaurantAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0 Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - RestaurantAPI.Controllers.WeatherForecastController.Hello (RestaurantAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-07 13:00:51.6974||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 13:00:51.7249||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 13:00:51.7249||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 13:00:51.7249||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 13:00:51.7249||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 13:02:38.2916||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 13:02:38.3320||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 13:02:38.3338||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 13:02:38.3338||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 13:02:38.3338||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 13:57:49.6593||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 13:57:49.7241||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 13:57:49.7241||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 13:57:49.7241||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 13:57:49.7241||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 13:59:32.4956||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-07 13:59:32.5287||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-07 13:59:32.5287||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-07 13:59:32.5287||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-07 13:59:32.5367||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-07 13:59:48.2347||INFO|_RestaurantAPI_.Middleware.RequestTimedOut|Request [GET] at /api/restaurant took 11194ms 

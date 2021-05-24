@@ -1,0 +1,342 @@
+2021-04-15 11:30:46.2441||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 11:30:46.2920||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 11:30:46.2920||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 11:30:46.2920||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 11:30:46.2920||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 11:52:51.7156||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 11:52:51.7802||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 11:52:51.7802||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 11:52:51.7802||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 11:52:51.7802||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 11:52:56.5568||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 11:54:21.9362||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 9 with 3 restaurants. 
+2021-04-15 11:54:21.9362||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 11:55:18.7451||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:07:48.9906||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:07:49.0343||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:07:49.0343||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:07:49.0343||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:07:49.0343||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:07:51.4978||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:09:58.5380||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:09:58.5787||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:09:58.5787||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:09:58.5787||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:09:58.5787||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:09:58.9506||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:12:22.2677||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 9 with 3 restaurants. 
+2021-04-15 12:12:22.2677||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 12:13:59.8902||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:13:59.9449||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:13:59.9449||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:13:59.9449||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:13:59.9449||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:14:03.8805||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The AuthorizationPolicy named: 'MinimumNumberOfRestaurants,Full' was not found. System.InvalidOperationException: The AuthorizationPolicy named: 'MinimumNumberOfRestaurants,Full' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:14:28.4275||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:14:28.4807||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:14:28.4807||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:14:28.4833||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:14:28.4833||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:14:29.4186||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 9 with 3 restaurants. 
+2021-04-15 12:14:29.4186||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 12:14:35.2547||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:15:02.3296||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:15:02.3525||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:15:02.3525||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:15:02.3525||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:15:02.3525||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:15:38.3879||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:15:38.4151||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:15:38.4151||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:15:38.4151||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:15:38.4151||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:15:39.9756||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The AuthorizationPolicy named: 'Authorize,MinimumNumberOfRestaurants' was not found. System.InvalidOperationException: The AuthorizationPolicy named: 'Authorize,MinimumNumberOfRestaurants' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:22:47.6510||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:22:47.6745||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:22:47.6745||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:22:47.6745||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:22:47.6745||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:22:51.1316||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 9 with 3 restaurants. 
+2021-04-15 12:22:51.1316||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 12:22:56.7245||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 36
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:24:43.2513||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:24:43.2744||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:24:43.2744||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:24:43.2744||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:24:43.2744||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:24:46.3371||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 35
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:27:18.6211||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:27:18.6465||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:27:18.6465||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:27:18.6465||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:27:18.6465||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:27:20.9119||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 29
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:28:21.0881||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:28:21.1164||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:28:21.1164||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:28:21.1164||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:28:21.1164||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:28:23.8368||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 29
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:29:05.4478||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:29:05.4711||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:29:05.4711||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:29:05.4711||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:29:05.4711||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:29:07.0868||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 35
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:35:58.8702||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:35:58.8968||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:35:58.8968||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:35:58.8968||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:35:58.8968||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:36:01.1693||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 29
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:36:08.4893||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 9 with 3 restaurants. 
+2021-04-15 12:36:08.4893||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 12:36:12.3516||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 29
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:39:37.1693||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 12:39:37.1942||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 12:39:37.1942||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 12:39:37.1942||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 12:39:37.1942||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 12:39:38.5654||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation Failed 
+2021-04-15 12:39:42.3704||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 9 with 3 restaurants. 
+2021-04-15 12:39:42.3704||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 12:40:07.5251||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 12 with 0 restaurants. 
+2021-04-15 12:40:07.5251||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation Failed 
+2021-04-15 12:40:10.9767||INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2021-04-15 13:07:51.1461||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 13:07:51.2053||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 13:07:51.2053||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 13:07:51.2053||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 13:07:51.2053||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 13:08:33.2126||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 12 with 0 restaurants. 
+2021-04-15 13:08:33.2126||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation Failed 
+2021-04-15 13:08:51.5968||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 13:08:51.5968||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 13:11:34.0695||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 13:11:34.1291||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 13:11:34.1291||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 13:11:34.1291||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 13:11:34.1291||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 13:11:35.3953||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 13:11:35.3953||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 13:11:42.4148||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 13:11:42.4148||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 13:13:08.6098||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 13:13:08.6840||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 13:13:08.6867||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 13:13:08.6867||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 13:13:08.6867||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 13:13:12.5059||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 13:13:12.5059||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 14:30:13.3269||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 14:30:13.3501||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 14:30:13.3501||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 14:30:13.3501||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 14:30:13.3501||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 14:30:15.7210||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 14:30:15.7210||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 14:30:21.6588||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 14:30:21.6588||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 14:30:26.0919||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 14:30:26.0919||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 14:30:29.7880||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 14:30:29.7880||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 14:51:23.6715||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 14:51:23.6951||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 14:51:23.6951||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 14:51:23.6951||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 14:51:23.6951||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 14:51:27.2874||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 14:51:27.2874||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 15:19:59.5678||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 15:19:59.5999||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 15:19:59.5999||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 15:19:59.5999||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 15:19:59.5999||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 15:21:02.8447||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 15:21:02.8447||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 15:21:07.0302||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 15:21:07.0307||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 15:21:51.3209||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 15:21:51.3209||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 15:56:40.9739||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2021-04-15 15:56:41.0069||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2021-04-15 15:56:41.0069||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2021-04-15 15:56:41.0069||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2021-04-15 15:56:41.0069||INFO|Microsoft.Hosting.Lifetime|Content root path: D:\csharp\RestaurantAPI\'RestaurantAPI' 
+2021-04-15 15:57:02.3132||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 15:57:02.3132||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 15:57:53.4414||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 15:57:53.4414||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 15:57:54.5174||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 15:57:54.5174||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 15:57:55.2453||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 15:57:55.2453||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 15:58:32.6595||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 15:58:32.6595||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 15:58:36.5048||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 15:58:36.5048||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 
+2021-04-15 15:58:37.2671||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|User with id 10 with 4 restaurants. 
+2021-04-15 15:58:37.2671||INFO|_RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler|Authorisation succedded 

@@ -1,0 +1,238 @@
+2021-04-10 12:52:44.8233||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|An error occurred while updating the entries. See the inner exception for details. Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Dishes_Restaurants_RestaurantId". The conflict occurred in database "RestaurantDb", table "dbo.Restaurants", column 'id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:ed68fd32-92d7-4425-916a-eced81f8b592
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at _RestaurantAPI_.Services.DishService.Create(Int32 restaurantId, CreateDishDto dto) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Services\DishService.cs:line 30
+   at _RestaurantAPI_.Controllers.DishController.Post(Int32 restaurantId, CreateDishDto dish) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Controllers\DishController.cs:line 27
+   at lambda_method10(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-10 13:18:10.7700||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The route parameter name 'restaurantId' appears more than one time in the route template. Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'restaurantId' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-10 13:19:33.6953||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The route parameter name 'restaurantId' appears more than one time in the route template. Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'restaurantId' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-10 13:20:19.8555||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The route parameter name 'restaurantId' appears more than one time in the route template. Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'restaurantId' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-10 13:20:30.0140||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The route parameter name 'restaurantId' appears more than one time in the route template. Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'restaurantId' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-10 13:21:04.0158||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The route parameter name 'restaurantId' appears more than one time in the route template. Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'restaurantId' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-10 13:34:55.8657||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The route parameter name 'restaurantId' appears more than one time in the route template. Microsoft.AspNetCore.Routing.Patterns.RoutePatternException: The route parameter name 'restaurantId' appears more than one time in the route template.
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternParser.Parse(String pattern)
+   at Microsoft.AspNetCore.Routing.Patterns.RoutePatternFactory.Parse(String pattern)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.AddEndpoints(List`1 endpoints, HashSet`1 routeNames, ActionDescriptor action, IReadOnlyList`1 routes, IReadOnlyList`1 conventions, Boolean createInertEndpoints)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerActionEndpointDataSource.CreateEndpoints(IReadOnlyList`1 actions, IReadOnlyList`1 conventions)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.UpdateEndpoints()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.Initialize()
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointDataSourceBase.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.<>c.<Initialize>b__15_0(EndpointDataSource d)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.Initialize()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.GetChangeToken()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at System.Threading.LazyInitializer.EnsureInitialized[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher..ctor(EndpointDataSource dataSource, Lifetime lifetime, Func`1 matcherBuilderFactory)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcherFactory.CreateMatcher(EndpointDataSource dataSource)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.InitializeCoreAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-10 14:02:33.5929||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The entity type 'EntityQueryable<Dish>' was not found. Ensure that the entity type has been added to the model. System.InvalidOperationException: The entity type 'EntityQueryable<Dish>' was not found. Ensure that the entity type has been added to the model.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetOrCreateEntry(Object entity)
+   at Microsoft.EntityFrameworkCore.DbContext.EntryWithoutDetectChanges[TEntity](TEntity entity)
+   at Microsoft.EntityFrameworkCore.DbContext.Remove[TEntity](TEntity entity)
+   at _RestaurantAPI_.Services.DishService.DeleteAll(Int32 restaurantId) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Services\DishService.cs:line 61
+   at _RestaurantAPI_.Controllers.DishController.RemoveAll(Int32 restaurantId) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Controllers\DishController.cs:line 47
+   at lambda_method133(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23

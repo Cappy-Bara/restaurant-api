@@ -1,0 +1,176 @@
+2021-04-15 11:52:56.5568||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 11:55:18.7451||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:07:51.4978||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:09:58.9506||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:14:03.8805||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The AuthorizationPolicy named: 'MinimumNumberOfRestaurants,Full' was not found. System.InvalidOperationException: The AuthorizationPolicy named: 'MinimumNumberOfRestaurants,Full' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:14:35.2547||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 28
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:15:39.9756||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|The AuthorizationPolicy named: 'Authorize,MinimumNumberOfRestaurants' was not found. System.InvalidOperationException: The AuthorizationPolicy named: 'Authorize,MinimumNumberOfRestaurants' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:22:56.7245||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 36
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:24:46.3371||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 35
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:27:20.9119||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 29
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:28:23.8368||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 29
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:29:07.0868||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 35
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:36:01.1693||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 29
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
+2021-04-15 12:36:12.3516||ERROR|_RestaurantAPI_.Middleware.ErrorHandlingMiddleware|Object reference not set to an instance of an object. System.NullReferenceException: Object reference not set to an instance of an object.
+   at _RestaurantAPI_.Authorization.MinimumNumberOfRestaurantsRequirementHandler.HandleRequirementAsync(AuthorizationHandlerContext context, MinimumNumberOfRestaurantsRequirement requirement) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Authorization\MinimumNumberOfRestaurantsRequirementHandler.cs:line 29
+   at Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(AuthorizationHandlerContext context)
+   at Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.AuthorizeAsync(ClaimsPrincipal user, Object resource, IEnumerable`1 requirements)
+   at Microsoft.AspNetCore.Authorization.Policy.PolicyEvaluator.AuthorizeAsync(AuthorizationPolicy policy, AuthenticateResult authenticationResult, HttpContext context, Object resource)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at _RestaurantAPI_.Middleware.RequestTimedOut.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\RequestTimedOut.cs:line 25
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at _RestaurantAPI_.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in D:\csharp\RestaurantAPI\'RestaurantAPI'\Middleware\ErrorHandlingMiddleware.cs:line 23
