@@ -24,6 +24,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using _RestaurantAPI_.Authorization;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace RestaurantAPI
 {
@@ -39,7 +42,6 @@ namespace RestaurantAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //    services.AddTransient<IWeatherForecastService, WeatherForecastService>();       //dependency injection
             var authenticationSettings = new AuthenticationSettings();
 
             Configuration.GetSection("Authentication").Bind(authenticationSettings);
@@ -74,7 +76,7 @@ namespace RestaurantAPI
             services.AddScoped<IAuthorizationHandler, ResourceOperationRequirementHandler>();
             services.AddScoped<IAuthorizationHandler, MinimumAgeRequirementHandler>();
             services.AddScoped<IAuthorizationHandler, MinimumNumberOfRestaurantsRequirementHandler>();
-            services.AddDbContext<RestaurantDbContext>();
+
             services.AddScoped<RestaurantSeeder>();
             services.AddAutoMapper(this.GetType().Assembly);
             services.AddScoped<IRestaurantService, RestaurantService>();       //dependency injection
@@ -87,14 +89,38 @@ namespace RestaurantAPI
             services.AddScoped<RequestTimedOut>();
             services.AddScoped<IUserContextService, UserContextService>();
             services.AddHttpContextAccessor(); 
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(options => { 
+                var securityScheme = new OpenApiSecurityScheme
+                {
+                    Name = "JWT Authentication",
+                    Description = "Enter JWT Bearer token **_only_**",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    Reference = new OpenApiReference
+                    {
+                        Id = JwtBearerDefaults.AuthenticationScheme,
+                        Type = ReferenceType.SecurityScheme
+                    }
+                };
+                options.AddSecurityDefinition(securityScheme.Reference.Id, securityScheme);
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {securityScheme, new string[] { }}
+                });
+             }
+        );
             services.AddCors(options =>                                        //obs³uga cors
                 options.AddPolicy("FrontEndClient", builder =>
                     builder.AllowAnyMethod()
                         .AllowAnyHeader()
                         .WithOrigins(Configuration["AllowedOrigins"])   //Adres frontendowej apki.
                 )
-            ); 
+            );
+
+            services.AddDbContext<RestaurantDbContext>
+                (options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline

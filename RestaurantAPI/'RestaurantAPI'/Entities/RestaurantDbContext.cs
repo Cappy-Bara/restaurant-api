@@ -11,13 +11,16 @@ namespace _RestaurantAPI_.Entities
 {
     public class RestaurantDbContext :DbContext
     {
-        //string _connectionString = "Server=(localdb)\\mssqllocaldb;Database=RestaurantDb;Trusted_Connection=True;";
-        string _connectionString = "Server=DESKTOP-R8L9JN2\\LEARNINGSQL;Database=RestaurantDb;Trusted_Connection=True;";
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<Dish> Dishes { get; set; }
         public DbSet<Address> Addresses{ get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
+
+        public RestaurantDbContext(DbContextOptions<RestaurantDbContext> options) : base(options)
+        {
+
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -46,11 +49,6 @@ namespace _RestaurantAPI_.Entities
                 .Property(r => r.Name)
                 .IsRequired();
 
-        }
-    
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(_connectionString);
         }
     }
 }

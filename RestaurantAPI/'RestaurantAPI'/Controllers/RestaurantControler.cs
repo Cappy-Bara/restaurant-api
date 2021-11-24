@@ -56,7 +56,7 @@ namespace _RestaurantAPI_.Controllers
         }
 
         [HttpPut("{Id}")]
-        public ActionResult Modify([FromRoute]int id, [FromBody] ModfiyRestaurantDto request)
+        public ActionResult Modify([FromRoute]int id, [FromBody]ModfiyRestaurantDto request)
         {
             _restaurantService.Modify(id, request);
             return BadRequest();
